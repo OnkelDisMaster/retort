@@ -35,7 +35,7 @@ function initializePlugin(api) {
     if (Retort.disabledFor(attrs.id)) { return }
     return {
       action: 'clickRetort',
-      icon: 'smile-o',
+      icon: 'far-smile',
       title: 'retort.title',
       position: 'first'
     }
