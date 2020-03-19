@@ -29,7 +29,7 @@ function initializePlugin(api) {
     })
   })
 
-  if (!Discourse.User.current() || !siteSettings.retort_enabled) { return }
+  if (!api.getCurrentUser() || !siteSettings.retort_enabled) { return }
 
   api.addPostMenuButton('retort', attrs => {
     if (Retort.disabledFor(attrs.id)) { return }
